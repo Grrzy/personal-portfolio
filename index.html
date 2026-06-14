@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Grzybowski</title>
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="4" y="4" width="16" height="16" rx="2" ry="2" fill="#e0f2fe"></rect>
+                    <line x1="9" y1="1" x2="9" y2="4"></line>
+                    <line x1="15" y1="1" x2="15" y2="4"></line>
+                    <line x1="9" y1="20" x2="9" y2="23"></line>
+                    <line x1="15" y1="20" x2="15" y2="23"></line>
+                    <line x1="20" y1="9" x2="23" y2="9"></line>
+                    <line x1="20" y1="14" x2="23" y2="14"></line>
+                    <line x1="1" y1="9" x2="4" y2="9"></line>
+                    <line x1="1" y1="14" x2="4" y2="14"></line>
+                    <path d="M10 9l-3 3 3 3"></path>
+                    <path d="M14 9l3 3-3 3"></path>
+                </svg>
+                <span>DevPortfolio</span>
+            </div>
+            <nav>
+                <a href="#hero" data-i18n="nav_inicio">Início</a>
+                <a href="#sobre" data-i18n="nav_sobre">Sobre Mim</a>
+                <a href="#projetos" data-i18n="nav_projetos">Projetos</a>
+                <a href="#contato" data-i18n="nav_contato">Contato</a>
+                
+                <button id="lang-toggle" class="btn-lang">EN</button>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1 data-i18n="hero_titulo">Olá, eu sou Lucas Grzybowski</h1>
+                <h2 data-i18n="hero_subtitulo">Desenvolvedor & Especialista em Suporte Técnico</h2>
+                <p data-i18n="hero_descricao">Construindo soluções robustas de software, gerenciando infraestruturas de hardware estáveis e dominando as ferramentas que moldam o futuro da tecnologia.</p>
+                <div class="hero-buttons">
+    <a href="#projetos" class="btn-primary" data-i18n="hero_botao">Ver Projetos</a>
+<a href="img/curriculo-pt.pdf" id="link-curriculo" target="_blank" class="btn-primary" data-i18n="hero_botao_curriculo">Ver Currículo</a>
+</div>
+            </div>
+            <div class="hero-illustration">
+                <svg viewBox="0 0 200 200" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M100,10 C150,10 190,50 190,100 C190,150 150,190 100,190 C50,190 10,150 10,100 C10,50 50,10 100,10 Z" fill="#e0f2fe" opacity="0.8"/>
+                    <path d="M55 70 L 40 25 L 90 55 Z" fill="#ffffff" stroke="#0284c7" stroke-width="4" stroke-linejoin="round"/>
+                    <path d="M54 60 L 46 36 L 76 54 Z" fill="#bae6fd"/>
+                    <path d="M145 70 L 160 25 L 110 55 Z" fill="#ffffff" stroke="#0284c7" stroke-width="4" stroke-linejoin="round"/>
+                    <path d="M146 60 L 154 36 L 124 54 Z" fill="#bae6fd"/>
+                    <path d="M45 180 C 45 130, 155 130, 155 180" fill="#ffffff" stroke="#0284c7" stroke-width="4"/>
+                    <circle cx="100" cy="95" r="50" fill="#ffffff" stroke="#0284c7" stroke-width="4"/>
+                    <circle cx="78" cy="85" r="9" fill="#0284c7"/>
+                    <circle cx="75" cy="82" r="3" fill="#ffffff"/>
+                    <circle cx="122" cy="85" r="9" fill="#0284c7"/>
+                    <circle cx="119" cy="82" r="3" fill="#ffffff"/>
+                    <path d="M92 103 L 108 103 L 100 112 Z" fill="#f472b6" stroke="#0284c7" stroke-width="2" stroke-linejoin="round"/>
+                    <path d="M100 112 C 100 120, 90 122, 83 115 M 100 112 C 100 120, 110 122, 117 115" fill="none" stroke="#0284c7" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M45 95 L 15 88 M 45 105 L 10 105 M 45 115 L 15 122" stroke="#0284c7" stroke-width="2.5" stroke-linecap="round"/>
+                    <path d="M155 95 L 185 88 M 155 105 L 190 105 M 155 115 L 185 122" stroke="#0284c7" stroke-width="2.5" stroke-linecap="round"/>
+                    <path d="M35 185 L 165 185 L 150 140 L 50 140 Z" fill="#38bdf8" stroke="#0284c7" stroke-width="4" stroke-linejoin="round"/>
+                    <rect x="50" y="140" width="100" height="8" fill="#0284c7"/>
+                    <circle cx="100" cy="165" r="9" fill="#e0f2fe"/>
+                    <ellipse cx="75" cy="142" rx="14" ry="10" fill="#ffffff" stroke="#0284c7" stroke-width="3"/>
+                    <ellipse cx="125" cy="142" rx="14" ry="10" fill="#ffffff" stroke="#0284c7" stroke-width="3"/>
+                    <path d="M69 148 L 69 142 M 75 150 L 75 143 M 81 148 L 81 142" stroke="#0284c7" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M119 148 L 119 142 M 125 150 L 125 143 M 131 148 L 131 142" stroke="#0284c7" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="about-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="sobre_titulo">Sobre Mim</h2>
+            <div class="about-grid">
+                <div class="about-content">
+                    <p class="highlight-text" data-i18n="sobre_faculdade">Estudante de Ciência da Computação no Centro Universitário Ritter dos Reis (UNIRITTER).</p>
+                    <p data-i18n="sobre_objetivo">Busco atuar de forma efetiva como desenvolvedor de software ou técnico de suporte em empresas de grande porte, aplicando rigor teórico e capacidade analítica para resolver problemas complexos de tecnologia.</p>
+                    <p data-i18n="sobre_experiencia">Minha trajetória une a ciência teórica com a vivência prática. Possuo um ano de experiência consolidada em Suporte Técnico, onde atuei diretamente com troubleshooting avançado, gerenciamento de infraestrutura e otimização de sistemas operacionais. Essa bagagem me deu uma base sólida para entender o comportamento dos sistemas sob estresse, o que hoje acelera e qualifica minha atuação no desenvolvimento de software.</p>
+                </div>
+                
+                <div class="about-cards">
+                    <div class="interactive-card" onclick="toggleCard(this)">
+                        <div class="card-visible">
+                            <h3 data-i18n="card_academico_titulo"><i class="fa-solid fa-graduation-cap"></i> Acadêmico</h3>
+                            <span class="click-hint" data-i18n="card_expandir">Clique para expandir</span>
+                        </div>
+                        <div class="card-hidden">
+                            <p><strong data-i18n="card_instituicao">Instituição:</strong> 
+                            <span data-i18n="card_instituicao_valor">UNIRITTER</span></p>
+                            <p><strong data-i18n="card_curso">Curso:</strong> 
+                            <span data-i18n="card_curso_valor">Bacharelado em Ciência da Computação</span></p>
+                            <p data-i18n="card_academico_detalhe">Foco em algoritmos, estrutura de dados e engenharia de sistemas.</p>
+                        </div>
+                    </div>
+
+                    <div class="interactive-card" onclick="toggleCard(this)">
+                        <div class="card-visible">
+                            <h3 data-i18n="card_suporte_titulo"><i class="fa-solid fa-gears"></i> Suporte Técnico</h3>
+                            <span class="click-hint" data-i18n="card_expandir">Clique para expandir</span>
+                        </div>
+                        <div class="card-hidden">
+                            <p><strong data-i18n="card_experiencia_tempo">Experiência:</strong>
+                                <data-i18n="card_experiencia_valor">1 Ano</data-i18n>
+                            </p>
+                            <p><strong data-i18n="card_especialidades">Especialidades:</strong> 
+                            <span data-i18n="card_especialidades_valor">Troubleshooting, network infrastructure, computer assembly/maintenance/installation, customer support via phone and TeamViewer.</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- sessão dos projetos -->
+    <section id="projetos" class="projects-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="projetos_titulo">Projetos em Destaque</h2>
+            <p class="section-subtitle" data-i18n="projetos_subtitulo">Clique nos cards abaixo para visualizar os detalhes técnicos de cada solução.</p>
+            
+            <!-- copiar esta área para adicionar um projeto novo -->
+            <div class="projects-grid">
+                <div class="project-card" onclick="toggleProject(this)">
+                    <div class="project-image">
+                        <img src="img/dados_Python.png" alt="Captura de tela do Projeto 1">
+                    </div>
+                    <div class="project-info">
+                        <h3 data-i18n="proj1_titulo">Dados com Python</h3>
+                        <p class="project-short-desc" data-i18n="proj1_desc">Exploração e análise de dados utilizando linguagem Python.</p>
+                        <div class="project-details">
+                            <p><strong data-i18n="proj_tech_label">Tecnologias:</strong> <span data-i18n="proj1_tech_list">Python, Pandas, Plotly, Streamlit.</span></p>
+                            <p data-i18n="proj1_detalhe">Foi realizada uma análise exploratória e estatística de um conjunto de dados utilizando técnicas de machine learning. Projeto desenvolvido para fins educacionais e de prática profissional.</p>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- até aqui -->
+
+                <div class="project-card" onclick="toggleProject(this)">
+                    <div class="project-image">
+                        <img src="img/sistema_gerencial.png" alt="Captura de tela do Projeto 2">
+                    </div>
+                    <div class="project-info">
+                        <h3 data-i18n="proj2_titulo">Sistema de Gerenciamento</h3>
+                        <p class="project-short-desc" data-i18n="proj2_desc">Sistema de gerenciamento de tarefas e recursos para ambientes de negócios.</p>
+                        <div class="project-details">
+                            <p><strong data-i18n="proj_tech_label">Tecnologias:</strong> <span data-i18n="proj2_tech_list">C++, Programação Orientada a Objetos.</span></p>
+                            <p data-i18n="proj2_detalhe">Sistema desenvolvido em C++ com foco em programação orientada a objetos, utilizando padrões de design para garantir manutenibilidade e escalabilidade. Projeto ainda em desenvolvimento. No exemplo, um sistema para locação de quadras esportivas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contact-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="contato_titulo">Vamos nos conectar?</h2>
+            <p data-i18n="contato_desc">Se você é um Tech Recruiter ou deseja discutir projetos e oportunidades, sinta-se à vontade para entrar em contato através das redes abaixo:</p>
+            
+            <div class="contact-links">
+                <a href="https://www.linkedin.com/in/lucas-grzybowski/" target="_blank" class="contact-icon" title="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/Grrzy" target="_blank" class="contact-icon" title="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="mailto:lucasgrzybowski12@gmail.com" class="contact-icon" title="E-mail">
+                    <i class="fa-regular fa-envelope"></i>
+                    <span>E-mail</span>
+                </a>
+            </div>
+        </div>
+        
+        <div class="footer-cat">
+            <svg viewBox="0 0 100 40" width="120" height="50">
+                <path d="M20 40 C 20 20, 50 20, 50 40" stroke="#0284c7" stroke-width="3" fill="none"/>
+                <path d="M25 25 L 20 10 L 32 20" stroke="#0284c7" stroke-width="2" fill="#bae6fd"/>
+                <path d="M45 25 L 50 10 L 38 20" stroke="#0284c7" stroke-width="2" fill="#bae6fd"/>
+                <path d="M50 35 Q 65 30, 60 15" stroke="#0284c7" stroke-width="2" fill="none" stroke-linecap="round"/>
+            </svg>
+        </div>
+    </section>
+
+    <footer>
+        <p data-i18n="footer_texto">&copy; 2026 - Desenvolvido por Lucas Grzybowski. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
