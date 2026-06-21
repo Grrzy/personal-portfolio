@@ -41,6 +41,8 @@ const translations = {
         projetos_titulo: "Projetos em Destaque",
         projetos_subtitulo: "Clique nos cards abaixo para visualizar os detalhes técnicos de cada solução.",
         proj_tech_label: "Tecnologias:",
+        proj_link_acessar: "Acessar Projeto", // <-- NOVA LINHA
+
         
         proj1_titulo: "Dados com Python",
         proj1_desc: "Exploração e análise de dados utilizando linguagem Python.",
@@ -96,6 +98,7 @@ const translations = {
         projetos_titulo: "Featured Projects",
         projetos_subtitulo: "Click on the cards below to view the technical details of each solution.",
         proj_tech_label: "Technologies:",
+        proj_link_acessar: "View Project", // <-- NOVA LINHA
         
         proj1_titulo: "Data with Python",
         proj1_desc: "Data exploration and analysis using Python language.",

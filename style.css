@@ -25,6 +25,7 @@ body {
     color: var(--text-dark);
     line-height: 1.6;
     scroll-behavior: smooth;
+    overflow-x: hidden; /* Previne rolagem horizontal indesejada */
 }
 
 .container {
@@ -33,7 +34,6 @@ body {
     padding: 80px 20px;
 }
 
-/* Títulos de Seção */
 .section-title {
     font-size: 2.2rem;
     text-align: center;
@@ -48,7 +48,9 @@ body {
     margin-bottom: 40px;
 }
 
-/* Botões */
+/* ==========================================================================
+   BOTÕES
+   ========================================================================== */
 .btn-primary {
     display: inline-block;
     background-color: var(--blue-600);
@@ -58,11 +60,33 @@ body {
     border-radius: 30px;
     font-weight: 600;
     transition: var(--transition);
+    border: 2px solid var(--blue-600);
 }
 
 .btn-primary:hover {
     background-color: var(--blue-400);
+    border-color: var(--blue-400);
     transform: translateY(-2px);
+}
+
+.btn-lang {
+    background-color: var(--blue-100);
+    color: var(--blue-600);
+    border: 2px solid var(--blue-200);
+    padding: 6px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.85rem;
+    margin-left: 20px;
+    transition: var(--transition);
+}
+
+.btn-lang:hover {
+    background-color: var(--blue-600);
+    color: var(--white);
+    border-color: var(--blue-600);
+    transform: translateY(-1px);
 }
 
 /* ==========================================================================
@@ -93,6 +117,11 @@ header {
     font-weight: 700;
     color: var(--blue-600);
     font-size: 1.2rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
 }
 
 nav a {
@@ -148,25 +177,16 @@ nav a:hover {
     max-width: 600px;
 }
 
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
 .hero-illustration {
     flex: 1;
     max-width: 350px;
-}
-/* ==========================================================================
-   1.1 AGRUPAMENTO DOS BOTÕES HERO
-   ========================================================================== */
-.hero-buttons {
-    display: flex;
-    gap: 15px; /* Espaço entre os botões */
-    margin-top: 20px;
-    flex-wrap: wrap; /* Permite que os botões fiquem um embaixo do outro em telas MUITO pequenas */
-}
-
-/* Ajuste opcional para centralizar os botões na versão mobile */
-@media (max-width: 768px) {
-    .hero-buttons {
-        justify-content: center;
-    }
 }
 
 /* ==========================================================================
@@ -178,7 +198,6 @@ nav a:hover {
 
 .about-grid {
     display: grid;
-    grid-template-columns: 1.2rem;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
     margin-top: 30px;
@@ -197,7 +216,6 @@ nav a:hover {
     text-align: justify;
 }
 
-/* Estilo dos Cards de Revelação */
 .about-cards {
     display: flex;
     flex-direction: column;
@@ -247,7 +265,6 @@ nav a:hover {
     padding-top: 0;
 }
 
-/* Classe injetada pelo JavaScript para abrir o card */
 .interactive-card.active .card-hidden {
     max-height: 200px;
     opacity: 1;
@@ -257,7 +274,7 @@ nav a:hover {
 }
 
 /* ==========================================================================
-   3. SEÇÃO DE PROJETOS
+   3. SEÇÃO DE PROJETOS (CORRIGIDA: 2 COLUNAS RESPONSIVAS)
    ========================================================================== */
 .projects-section {
     background-color: var(--bg-light);
@@ -265,8 +282,9 @@ nav a:hover {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, 1fr); /* Força 2 colunas */
     gap: 30px;
+    align-items: start; /* Impede que os cards estiquem e quebrem o layout */
 }
 
 .project-card {
@@ -284,24 +302,20 @@ nav a:hover {
     box-shadow: 0 8px 25px rgba(2, 132, 199, 0.1);
 }
 
-/* ==========================================================================
-   ESTILOS DA IMAGEM DO PROJETO
-   ========================================================================== */
 .project-image {
     width: 100%;
-    height: 180px; /* Mantém a mesma altura do placeholder antigo */
-    overflow: hidden; /* Garante que a imagem respeite as bordas arredondadas do card */
+    height: 180px; 
+    overflow: hidden; 
 }
 
 .project-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Faz a imagem preencher todo o retângulo sem amassar ou distorcer */
+    object-fit: cover; 
     display: block;
-    transition: transform 0.4s ease; /* Prepara a animação de zoom */
+    transition: transform 0.4s ease; 
 }
 
-/* Efeito de zoom na imagem ao passar o mouse em cima do card inteiro */
 .project-card:hover .project-image img {
     transform: scale(1.05);
 }
@@ -328,13 +342,41 @@ nav a:hover {
     padding-top: 0;
 }
 
-/* Classe injetada pelo JS para exibir os detalhes escondidos do projeto */
 .project-card.open .project-details {
-    max-height: 300px;
+    max-height: 400px;
     opacity: 1;
     padding-top: 15px;
     margin-top: 15px;
     border-top: 1px solid var(--blue-100);
+}
+
+.project-link-container {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px dashed var(--blue-200);
+    text-align: center;
+}
+
+.btn-project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: transparent;
+    color: var(--blue-600);
+    border: 2px solid var(--blue-600);
+    padding: 8px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.btn-project-link:hover {
+    background-color: var(--blue-600);
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(2, 132, 199, 0.2);
 }
 
 /* ==========================================================================
@@ -415,13 +457,12 @@ footer {
     .nav-container {
         flex-direction: column;
         gap: 15px;
-        /* position: relative transforma o cabeçalho na 'âncora' para o botão */
-        position: relative; 
+        position: relative; /* Transforma o cabeçalho na 'âncora' para o botão EN */
     }
 
     nav {
         display: flex;
-        flex-wrap: wrap; /* Permite que os links quebrem linha em telas muito finas */
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         row-gap: 10px;
@@ -429,22 +470,26 @@ footer {
 
     nav a {
         margin: 0 10px;
-        font-size: 0.95rem; /* Fonte levemente menor para caber melhor */
+        font-size: 0.95rem;
     }
 
-    /* Move o botão de idioma para o canto superior direito, ao lado da logo */
+    /* Move o botão de idioma para o canto superior direito */
     .btn-lang {
         position: absolute;
-        top: 15px; /* Alinha a altura com a logo */
-        right: 20px; /* Encosta na margem direita */
+        top: 15px;
+        right: 20px;
         margin: 0;
-        padding: 4px 12px; /* Deixa o botão um pouco mais compacto no mobile */
+        padding: 4px 12px;
     }
 
     .hero-container {
         flex-direction: column-reverse;
         text-align: center;
         padding-top: 40px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
     }
 
     .hero-text h1 {
@@ -456,39 +501,12 @@ footer {
         gap: 30px;
     }
 
+    /* Força os projetos a terem 1 coluna apenas no celular */
+    .projects-grid {
+        grid-template-columns: 1fr; 
+    }
+
     .contact-links {
         gap: 20px;
-    }
-}
-
-/* ==========================================================================
-   BOTÃO DE TRADUÇÃO (IDIOMA)
-   ========================================================================== */
-.btn-lang {
-    background-color: var(--blue-100);
-    color: var(--blue-600);
-    border: 2px solid var(--blue-200);
-    padding: 6px 14px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-weight: 600;
-    font-size: 0.85rem;
-    margin-left: 20px;
-    transition: var(--transition);
-}
-
-.btn-lang:hover {
-    background-color: var(--blue-600);
-    color: var(--white);
-    border-color: var(--blue-600);
-    transform: translateY(-1px);
-}
-
-/* Ajuste de responsividade para telas pequenas */
-@media (max-width: 768px) {
-    .btn-lang {
-        margin-left: 0;
-        margin-top: 10px;
-        width: 60px;
     }
 }
