@@ -50,7 +50,7 @@ const translations = {
         proj1_detalhe: "Foi realizada uma análise exploratória e estatística de um conjunto de dados utilizando técnicas de machine learning. Projeto desenvolvido para fins educacionais e de prática profissional.",
         
         proj2_titulo: "Sistema de Gerenciamento",
-        proj2_desc: "Sistema de gerenciamento de tarefas e recursos para ambientes de negócios.",
+        proj2_desc: "Sistema de gerenciamento para uma empresa fictícia.",
         proj2_tech_list: "C++, Programação Orientada a Objetos.",
         proj2_detalhe: "Sistema desenvolvido em C++ com foco em programação orientada a objetos, utilizando padrões de design para garantir manutenibilidade e escalabilidade. Projeto ainda em desenvolvimento. No exemplo, um sistema para locação de quadras esportivas.",
 
