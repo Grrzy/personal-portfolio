@@ -54,6 +54,16 @@ const translations = {
         proj2_tech_list: "C++, Programação Orientada a Objetos.",
         proj2_detalhe: "Sistema desenvolvido em C++ com foco em programação orientada a objetos, utilizando padrões de design para garantir manutenibilidade e escalabilidade. Projeto ainda em desenvolvimento. No exemplo, um sistema para locação de quadras esportivas.",
 
+        proj3_titulo: "EscalaApp",
+        proj3_desc: "Aplicativo para gestão de escalas de funcionários.",
+        proj3_tech_list: "HTML, CSS, JavaScript",
+        proj3_detalhe: "O EscalaApp é uma aplicação web Client-Side projetada para resolver a complexidade logística de operações críticas de atendimento 24/7. O sistema automatiza o rodízio de equipes no regime 6x1, garantindo auditoria em tempo real, validação de leis trabalhistas (CLT) e exportação de relatórios corporativos. Versão v1.5 Enterprise disponível.",
+
+        proj4_titulo: "CAT Hardcore Uninstaller",
+        proj4_desc: "Utilitário avançado para desinstalação completa de softwares.",
+        proj4_tech_list: "C++, Win32 API",
+        proj4_detalhe: "O CAT Hardcore Uninstaller é um utilitário de sistema avançado construído puramente em C++ (Win32 API). Projetado para superar as limitações do desinstalador padrão do Windows, ele não apenas executa a remoção oficial dos programas, mas utiliza motores de busca heurística e expressões regulares (Regex) para rastrear e aniquilar diretórios remanescentes, pastas AppData e lixo acumulado no Registro do Windows.",
+
         // Contato & Footer
         contato_titulo: "Vamos nos conectar?",
         contato_desc: "Se você é um Tech Recruiter ou deseja discutir projetos e oportunidades, sinta-se à vontade para entrar em contato através das redes abaixo:",
@@ -109,6 +119,16 @@ const translations = {
         proj2_desc: "Task and resource management system for business environments.",
         proj2_tech_list: "C++, Object-Oriented Programming.",
         proj2_detalhe: "System developed in C++ with a focus on object-oriented programming, utilizing design patterns to ensure maintainability and scalability. Project still in development. As an example, a system for sports court rental.",
+
+        proj3_titulo: "EscalaApp",
+        proj3_desc: "Web application for managing employee schedules and shifts.",
+        proj3_tech_list: "HTML, CSS, JavaScript",
+        proj3_detalhe: "EscalaApp is a client-side web application designed to address the logistical complexity of critical 24/7 operations. The system automates team rotations in a 6x1 schedule, ensuring real-time auditing, compliance with labor laws (CLT), and corporate report exports. Version v1.5 Enterprise available.",
+
+        proj4_titulo: "CAT Hardcore Uninstaller",
+        proj4_desc: "Advanced system utility for thorough software uninstallation.",
+        proj4_tech_list: "C++, Win32 API",
+        proj4_detalhe: "CAT Hardcore Uninstaller is an advanced system utility built purely in C++ (Win32 API). Designed to overcome the limitations of the standard Windows uninstaller, it not only performs official program removal but also employs heuristic search engines and regular expressions (Regex) to track and eliminate leftover directories, AppData folders, and accumulated Windows Registry clutter.",
 
         // Contact & Footer
         contato_titulo: "Let's connect?",
